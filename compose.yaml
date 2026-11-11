@@ -1,0 +1,12 @@
+services:
+  api:
+    image: fastapi-ai-service:learning
+    ports:
+      - "127.0.0.1:9000:8000"
+    environment:
+            DEEPSEEK_API_KEY: "${DEEPSEEK_API_KEY:?请先设置环境变量}"
+    volumes:
+      - sqlite-learning-data:/app/data
+
+volumes:
+  sqlite-learning-data:

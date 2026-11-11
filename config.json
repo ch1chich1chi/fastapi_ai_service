@@ -1,0 +1,5 @@
+{
+  "model": "deepseek-flash",
+  "timeout": 30,
+  "features": ["chat", "rag"]
+}
